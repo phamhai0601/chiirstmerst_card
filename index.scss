@@ -13,6 +13,18 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+  .snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("snow.png");
+    background-size: cover;
+    animation: animationSnow 4s ease-in-out infinite;
+    animationDuration: 1s;
+  }
 }
 
 .merry-christmas img {
@@ -382,5 +394,19 @@ p {
     -ms-transform: translate(-50%, 10px);
     -o-transform: translate(-50%, 10px);
     transform: translate(-50%, 10px);
+  }
+}
+
+@keyframes animationSnow {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100px, 50vh);
+    opacity: 0;
   }
 }
