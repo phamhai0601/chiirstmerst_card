@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("https://images.pexels.com/photos/257909/pexels-photo-257909.jpeg?fit=crop&w=1920&h=1280");
+  background-color: #BE1E2D;
   background-repeat: no-repeat;
   background-size: cover;
   background-size-filter: grayScale(1);
@@ -12,6 +12,16 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+body .footer {
+  background-image: url(Imgur.png);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 100vh;
+  background-position: bottom;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
 }
 body .snow {
   position: absolute;
@@ -24,11 +34,27 @@ body .snow {
   animation: animationSnow 4s ease-in-out infinite;
   animationDuration: 1s;
 }
-body #sleigh {
+body .container-svg svg {
+  width: 100%;
+  height: 60vh;
+}
+body .container-svg svg #sleigh {
   position: absolute;
   top: 600px;
   left: -100px;
   animation: animationSleigh 4s ease-in-out infinite;
+}
+body .container-svg .st6 {
+  fill: white;
+}
+body .container-svg .st9 {
+  fill: #FFFAD7;
+}
+body .container-svg .st13 {
+  fill: black;
+}
+body .container-svg .st10 {
+  fill: #F2E69E;
 }
 
 .merry-christmas img {
@@ -450,6 +476,14 @@ p {
   100% {
     opacity: 0;
     transform: translate(3000px, -1000px);
+  }
+}
+@keyframes animationShowMoon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
