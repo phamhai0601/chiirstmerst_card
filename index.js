@@ -7,11 +7,10 @@ elemCard.addEventListener('click', function() {
 });
 
 let body  = document.querySelector('body');
-let count = 50;
 for(let i = 0; i < 50; i++) {
 	let leftSnow  = Math.floor(Math.random() * body.clientWidth);
-	let topSnow   = Math.floor(Math.random() * body.clientHeight/2);
-	let widthSnow = Math.floor(Math.random() * 50);
+	let topSnow   = Math.floor(Math.random() * (body.clientHeight/3));
+	let widthSnow = Math.floor(Math.random() * 40);
 	let timeSnow  = Math.floor((Math.random() * 5) + 4);
 	let blurSnow  = Math.floor(Math.random() * 20);
 	let div       = document.createElement('div');
