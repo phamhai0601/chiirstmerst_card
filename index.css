@@ -7,11 +7,11 @@ body {
   background-color: #BE1E2D;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size-filter: grayScale(1);
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  width: 100%;
 }
 body .footer {
   background-image: url(Imgur.png);
@@ -415,7 +415,7 @@ p {
     opacity: 1;
   }
   100% {
-    transform: translate(100px, 50vh);
+    transform: translate(100px, 40vh);
     opacity: 0;
   }
 }
