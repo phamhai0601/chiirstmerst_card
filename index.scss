@@ -25,6 +25,12 @@ body {
     animation: animationSnow 4s ease-in-out infinite;
     animationDuration: 1s;
   }
+  #sleigh{
+    position: absolute;
+    top: 600px;
+    left: -100px;
+    animation:animationSleigh  4s ease-in-out infinite;
+  }
 }
 
 .merry-christmas img {
@@ -148,8 +154,8 @@ body {
 
 .card,
 .card-page {
-  width: 350px;
-  height: 500px;
+  width: 250px;
+  height: 350px;
 }
 
 @media (max-width: 767px) {
@@ -410,3 +416,64 @@ p {
     opacity: 0;
   }
 }
+
+@keyframes animationSleigh {
+  0% {
+    opacity: 0;
+    transform: translate(-3000px, 1000px);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
+  31% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  35% {
+    opacity: 1;
+    transform: translate(0, -5px);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(0, 5px);
+  }
+  45% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 5px);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0, 5px);
+  }
+  65% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(0, 5px);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(3000px, -1000px);
+  }
+}
+
